@@ -64,6 +64,8 @@ void partOne() {
                         std::cout << number << std::endl;
                         sum += stoi(number);
                         number = "";
+                    } else {
+                        number = "";
                     }
 
                 }
