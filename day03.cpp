@@ -6,9 +6,11 @@
 #include <utility>
 #include <algorithm>
 
+
 bool isSymbol(char ch) {
     return ch != '.' && !isdigit(ch);
 }
+
 
 bool isAdjacentToSymbol(const std::vector<std::string>& schematic, int x, int y) {
     for (int i = -1; i <= 1; ++i) {
@@ -24,6 +26,7 @@ bool isAdjacentToSymbol(const std::vector<std::string>& schematic, int x, int y)
     }
     return false;
 }
+
 
 void partOne() {
     std::ifstream file("data/day03_data.txt");
@@ -77,6 +80,7 @@ void partOne() {
 
     std::cout << "Sum of all part numbers: " << sum << std::endl;
 }
+
 
 int main() {
     partOne();
